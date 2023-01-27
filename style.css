@@ -17,3 +17,11 @@ p {
   text-align: center;
   transform: translateY(20px);
 }
+
+
+h1 {
+  font-family: 'Source Code Pro', monospace;
+  color: rgb(255, 119, 119);
+  text-align: center;
+  transform: translateY(20px);
+}
